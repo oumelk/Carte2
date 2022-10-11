@@ -1,0 +1,10 @@
+﻿@page  "{id:int}"
+@model Carte2.Pages.Citoyens.DeleteModel
+
+
+<h1>Delete!!</h1>
+<p class="alert alert-danger">Est-ce-que vous etes sur vous voulez supprimer ce citoyen ?</p>
+<form method="post">
+    <button type="submit" class="btn btn-danger">Oui!!</button>
+    <a asp-page="./List" class="btn btn-light" >Annuler</a>
+</form>

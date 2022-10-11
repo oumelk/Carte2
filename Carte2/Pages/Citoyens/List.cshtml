@@ -1,0 +1,16 @@
+﻿
+@model Carte2.Pages.Citoyens.ListModel
+
+
+<h1>Liste des citoyens :</h1>
+<a asp-page="./Edit" class="btn btn-primary">Ajouter un nouveau citoyen</a>
+if(Citoyens != null)
+{
+
+    @foreach(var Citoyen in Model.Citoyens)
+        {
+            <partial name="_Summary" model="Citoyen" />
+        }
+}
+
+

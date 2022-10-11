@@ -1,0 +1,22 @@
+﻿@using Carte2Layer.Domain
+@model Citoyen 
+
+
+<div class="card card-default m-3">
+    <div class="card-header">
+        <h3>@Model.Nom</h3>
+    </div>
+    <div class="card-body">
+        <span>Age: @Model.Age</span>
+        <span>Prenom: @Model.Prenom</span>
+    </div>
+    <div class="card-footer">
+        <a asp-page="./Edit" asp-route-id="@Model.Id" class="btn btn-light">
+            <i class="fa-solid fa-pen-to-square"></i>                
+        </a>
+        <a asp-page="./Delete" asp-route-id="@Model.Id" class="btn btn-light">
+            <i class="fa-solid fa-trash-can"></i>               
+        </a>
+    </div>
+
+</div>
